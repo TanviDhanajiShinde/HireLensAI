@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: hirelens-ai
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: DATABASE_URL
+        sync: false
